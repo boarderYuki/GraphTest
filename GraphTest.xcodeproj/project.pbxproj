@@ -54,6 +54,7 @@
 		B6C1AD3C20CA56E4004CD588 /* GraphTest */ = {
 			isa = PBXGroup;
 			children = (
+				B6C1AD4F20CA6E39004CD588 /* screenshot */,
 				B6C1AD3D20CA56E4004CD588 /* AppDelegate.swift */,
 				B6C1AD3F20CA56E4004CD588 /* ViewController.swift */,
 				B6C1AD4120CA56E4004CD588 /* Main.storyboard */,
@@ -62,6 +63,13 @@
 				B6C1AD4920CA56E4004CD588 /* Info.plist */,
 			);
 			path = GraphTest;
+			sourceTree = "<group>";
+		};
+		B6C1AD4F20CA6E39004CD588 /* screenshot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screenshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGG4PHM8YL;
 				INFOPLIST_FILE = GraphTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-yuki.GraphTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGG4PHM8YL;
 				INFOPLIST_FILE = GraphTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-yuki.GraphTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";

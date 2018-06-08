@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GraphTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dr5-ST-IPh">
+                                <rect key="frame" x="0.0" y="120" width="320" height="248"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-mS-CZh">
+                                        <rect key="frame" x="20" y="25" width="30" height="223"/>
+                                        <color key="backgroundColor" red="0.35076248650000003" green="0.77171558139999996" blue="0.310151279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhu-Mm-8f8">
+                                        <rect key="frame" x="70" y="0.0" width="30" height="248"/>
+                                        <color key="backgroundColor" red="0.35076248650000003" green="0.77171558139999996" blue="0.310151279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bos-rg-N6y">
+                                        <rect key="frame" x="120" y="99" width="30" height="149"/>
+                                        <color key="backgroundColor" red="0.35076248650000003" green="0.77171558139999996" blue="0.310151279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R73-8g-XGg">
+                                        <rect key="frame" x="170" y="0.0" width="30" height="248"/>
+                                        <color key="backgroundColor" red="0.35076248650000003" green="0.77171558139999996" blue="0.310151279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tb-Oa-e7W">
+                                        <rect key="frame" x="220" y="0.0" width="30" height="248"/>
+                                        <color key="backgroundColor" red="0.35076248650000003" green="0.77171558139999996" blue="0.310151279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtQ-0y-mjw">
+                                        <rect key="frame" x="270" y="0.0" width="30" height="248"/>
+                                        <color key="backgroundColor" red="0.35076248650000003" green="0.77171558139999996" blue="0.310151279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.96829542479999997" blue="0.76264412690000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DLL-mS-CZh" secondAttribute="bottom" id="4IP-eq-XrZ"/>
+                                    <constraint firstItem="bos-rg-N6y" firstAttribute="height" secondItem="dr5-ST-IPh" secondAttribute="height" multiplier="0.6" id="56x-X1-K7v"/>
+                                    <constraint firstItem="R73-8g-XGg" firstAttribute="leading" secondItem="bos-rg-N6y" secondAttribute="trailing" constant="20" id="8OS-BC-cYb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nhu-Mm-8f8" secondAttribute="bottom" id="Aht-gG-3RB"/>
+                                    <constraint firstItem="XtQ-0y-mjw" firstAttribute="leading" secondItem="9tb-Oa-e7W" secondAttribute="trailing" constant="20" id="Bfu-Mj-6dH"/>
+                                    <constraint firstAttribute="bottom" secondItem="9tb-Oa-e7W" secondAttribute="bottom" id="DUP-LY-d1A"/>
+                                    <constraint firstItem="9tb-Oa-e7W" firstAttribute="width" secondItem="DLL-mS-CZh" secondAttribute="width" id="GY7-cC-HSJ"/>
+                                    <constraint firstItem="DLL-mS-CZh" firstAttribute="leading" secondItem="dr5-ST-IPh" secondAttribute="leading" constant="20" id="M5u-e3-rk4"/>
+                                    <constraint firstItem="XtQ-0y-mjw" firstAttribute="width" secondItem="DLL-mS-CZh" secondAttribute="width" id="Sqg-lJ-Xju"/>
+                                    <constraint firstItem="9tb-Oa-e7W" firstAttribute="height" secondItem="dr5-ST-IPh" secondAttribute="height" id="W47-kt-fe0"/>
+                                    <constraint firstItem="9tb-Oa-e7W" firstAttribute="leading" secondItem="R73-8g-XGg" secondAttribute="trailing" constant="20" id="a7Z-8w-Xwh"/>
+                                    <constraint firstItem="R73-8g-XGg" firstAttribute="height" secondItem="dr5-ST-IPh" secondAttribute="height" id="aOP-ze-ge0"/>
+                                    <constraint firstItem="Nhu-Mm-8f8" firstAttribute="height" secondItem="dr5-ST-IPh" secondAttribute="height" id="bSf-8R-XAl"/>
+                                    <constraint firstItem="XtQ-0y-mjw" firstAttribute="height" secondItem="dr5-ST-IPh" secondAttribute="height" id="eDJ-GY-adU"/>
+                                    <constraint firstItem="Nhu-Mm-8f8" firstAttribute="leading" secondItem="DLL-mS-CZh" secondAttribute="trailing" constant="20" id="gDA-lM-dXw"/>
+                                    <constraint firstAttribute="trailing" secondItem="XtQ-0y-mjw" secondAttribute="trailing" constant="20" id="gKv-4f-Zbh"/>
+                                    <constraint firstItem="bos-rg-N6y" firstAttribute="leading" secondItem="Nhu-Mm-8f8" secondAttribute="trailing" constant="20" id="hrD-yo-saS"/>
+                                    <constraint firstItem="Nhu-Mm-8f8" firstAttribute="width" secondItem="DLL-mS-CZh" secondAttribute="width" id="jRT-CK-dQM"/>
+                                    <constraint firstAttribute="bottom" secondItem="bos-rg-N6y" secondAttribute="bottom" id="jUo-Uh-Pp7"/>
+                                    <constraint firstAttribute="bottom" secondItem="R73-8g-XGg" secondAttribute="bottom" id="l2u-ia-d7g"/>
+                                    <constraint firstItem="R73-8g-XGg" firstAttribute="width" secondItem="DLL-mS-CZh" secondAttribute="width" id="skK-Sr-0BB"/>
+                                    <constraint firstAttribute="bottom" secondItem="XtQ-0y-mjw" secondAttribute="bottom" id="uco-7K-E3V"/>
+                                    <constraint firstItem="bos-rg-N6y" firstAttribute="width" secondItem="DLL-mS-CZh" secondAttribute="width" id="wab-Fi-jgk"/>
+                                    <constraint firstItem="DLL-mS-CZh" firstAttribute="height" secondItem="dr5-ST-IPh" secondAttribute="height" multiplier="0.9" id="y1z-FE-dRg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS4-lq-Abj">
+                                <rect key="frame" x="134" y="433" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshGraph:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3a-re-PZN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dr5-ST-IPh" secondAttribute="trailing" id="AZn-Qd-sw9"/>
+                            <constraint firstItem="dr5-ST-IPh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="MNX-aF-hL4"/>
+                            <constraint firstItem="dr5-ST-IPh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e5o-gi-VLh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dr5-ST-IPh" secondAttribute="bottom" constant="200" id="uLq-be-HY4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="graph_1" destination="y1z-FE-dRg" id="lkP-kA-GXf"/>
+                        <outlet property="graph_2" destination="bSf-8R-XAl" id="KV6-Wd-yap"/>
+                        <outlet property="graph_3" destination="56x-X1-K7v" id="c9L-5S-f9R"/>
+                        <outlet property="graph_4" destination="aOP-ze-ge0" id="Kzb-x5-mXh"/>
+                        <outlet property="graph_5" destination="W47-kt-fe0" id="JGF-Tj-98G"/>
+                        <outlet property="graph_6" destination="eDJ-GY-adU" id="LOd-jt-IJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
